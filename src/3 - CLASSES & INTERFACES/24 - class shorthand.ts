@@ -22,15 +22,15 @@
 
 // shorthand
 
-class Department3 {
-  constructor(private id: number, public name: string) {}
+// class Department3 {
+//   constructor(private id: number, public name: string) {}
 
-  describe(this: Department3) {
-    console.log(
-      `this Department ${this.name}, which is under the number ${this.id}`
-    );
-  }
-}
+//   describe(this: Department3) {
+//     console.log(
+//       `this Department ${this.name}, which is under the number ${this.id}`
+//     );
+//   }
+// }
 
-const management = new Department3(1, 'Management');
-management.describe();
+// const management = new Department3(1, 'Management');
+// management.describe();
