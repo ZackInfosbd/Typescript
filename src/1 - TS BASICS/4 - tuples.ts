@@ -7,25 +7,25 @@
 //   role: [2, 'author'],
 // };
 
-const person0: {
-  name: string;
-  age: number;
-  hobbies: string[];
-  role: [number, string];
-} = {
-  name: 'zack',
-  age: 35,
-  hobbies: ['Sport', 'Cooking'],
-  role: [2, 'author'],
-};
+// const person0: {
+//   name: string;
+//   age: number;
+//   hobbies: string[];
+//   role: [number, string];
+// } = {
+//   name: 'zack',
+//   age: 35,
+//   hobbies: ['Sport', 'Cooking'],
+//   role: [2, 'author'],
+// };
 
-console.log(person0.role);
+// console.log(person0.role);
 
-person0.role.push('admin');
-// person.role[1] = 10; // .1
-// person.role = [0,'admin','user'] // .2
+// person0.role.push('admin');
+// // person.role[1] = 10; // .1
+// // person.role = [0,'admin','user'] // .2
 
-console.log(person0.role);
+// console.log(person0.role);
 
 /**
  * Tuples :  [1,2] => are arrays with fixed length and fixed type

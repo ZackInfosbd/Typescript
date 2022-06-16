@@ -5,35 +5,35 @@
 // const READ_ONLY = 1;
 // const AUTHOR = 2;
 
-enum Role {
-  ADMIN,
-  READ_ONLY,
-  AUTHOR,
-}
-
-// .2
 // enum Role {
-//   ADMIN = 5,
+//   ADMIN,
 //   READ_ONLY,
 //   AUTHOR,
 // }
 
-const person = {
-  name: 'zack',
-  age: 35,
-  hobbies: ['Sport', 'Cooking'],
-  // role: ADMIN,
-  role: Role.ADMIN,
-};
+// // .2
+// // enum Role {
+// //   ADMIN = 5,
+// //   READ_ONLY,
+// //   AUTHOR,
+// // }
 
-// .1
-// if (person.permission === ADMIN) {
-//   console.log('the person is Admin');
+// const person = {
+//   name: 'zack',
+//   age: 35,
+//   hobbies: ['Sport', 'Cooking'],
+//   // role: ADMIN,
+//   role: Role.ADMIN,
+// };
+
+// // .1
+// // if (person.permission === ADMIN) {
+// //   console.log('the person is Admin');
+// // }
+
+// if (person.role === Role.ADMIN) {
+//   console.log('the user is an Admin');
 // }
-
-if (person.role === Role.ADMIN) {
-  console.log('the user is an Admin');
-}
 
 /**
  * enum {NEW,OLD}

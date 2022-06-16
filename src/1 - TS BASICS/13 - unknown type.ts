@@ -1,18 +1,18 @@
 // TODO: 29 - Working with Unown Type
 
-let userInput: unknown;
-let userName: string;
+// let userInput: unknown;
+// let userName: string;
 
-userInput = 5;
-userInput = 'zack';
+// userInput = 5;
+// userInput = 'zack';
 
-// 1.
-// userName = userInput;
+// // 1.
+// // userName = userInput;
 
-// 2.
-if (typeof userInput === 'string') {
-  userName = userInput;
-}
+// // 2.
+// if (typeof userInput === 'string') {
+//   userName = userInput;
+// }
 
 /**
  * unkown type: is a type that isnt unknown yet, accept all the values types, kinda any type but not really

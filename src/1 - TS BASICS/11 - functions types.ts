@@ -1,31 +1,31 @@
 // TODO: 27 - Functions as Types
 
-function add(n1: number, n2: number) {
-  return n1 + n2;
-}
+// function add(n1: number, n2: number) {
+//   return n1 + n2;
+// }
 
-function printResult(num: number): void {
-  console.log('Result is: ' + num);
-}
+// function printResult(num: number): void {
+//   console.log('Result is: ' + num);
+// }
 
-printResult(add(5, 12));
+// printResult(add(5, 12));
 
-// .3
-// let combineValues: Function;
+// // .3
+// // let combineValues: Function;
 
-// .5
-let combineValues: (a: number, b: number) => number;
+// // .5
+// let combineValues: (a: number, b: number) => number;
 
-// .1
-combineValues = add;
+// // .1
+// combineValues = add;
 
-// .2
-// combineValues = 5;
+// // .2
+// // combineValues = 5;
 
-// .4
-// combineValues = printResult;
+// // .4
+// // combineValues = printResult;
 
-console.log(combineValues(8, 8));
+// console.log(combineValues(8, 8));
 
 /**
  * 1. we can assign a pointer to a function in a variable and then execute that variable

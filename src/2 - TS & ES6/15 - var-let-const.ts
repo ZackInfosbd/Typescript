@@ -1,27 +1,27 @@
-const firstName = 'Zack';
-// firstName = 'Kaz';
+// const firstName = 'Zack';
+// // firstName = 'Kaz';
 
-let age = 35;
-
-age = 25;
-
-function add5(a: number, b: number) {
-  var result;
-  result = a + b;
-  return result;
-}
-
-// console.log(result);
-
-// .3
 // let age = 35;
-// if (age > 20) {
-//   var isOld = true;
+
+// age = 25;
+
+// function add5(a: number, b: number) {
+//   var result;
+//   result = a + b;
+//   return result;
 // }
 
-if (age > 20) {
-  let isOld = true;
-}
+// // console.log(result);
+
+// // .3
+// // let age = 35;
+// // if (age > 20) {
+// //   var isOld = true;
+// // }
+
+// if (age > 20) {
+//   let isOld = true;
+// }
 
 // console.log(isOld);
 

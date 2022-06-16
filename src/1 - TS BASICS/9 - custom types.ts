@@ -27,33 +27,33 @@
 
 // .2
 
-type CustomType = number | string;
-type ConversionDescriptor = 'as-number' | 'as-text';
+// type CustomType = number | string;
+// type ConversionDescriptor = 'as-number' | 'as-text';
 
-function combined(
-  input1: CustomType,
-  input2: CustomType,
-  resultConversion: ConversionDescriptor
-) {
-  let result: number | string;
-  if (
-    (typeof input1 === 'number' && typeof input2 === 'number') ||
-    resultConversion === 'as-number'
-  ) {
-    result = +input1 + +input2;
-    return result;
-  } else {
-    result = input1.toString() + input2.toString();
-  }
-  return result;
-}
+// function combined(
+//   input1: CustomType,
+//   input2: CustomType,
+//   resultConversion: ConversionDescriptor
+// ) {
+//   let result: number | string;
+//   if (
+//     (typeof input1 === 'number' && typeof input2 === 'number') ||
+//     resultConversion === 'as-number'
+//   ) {
+//     result = +input1 + +input2;
+//     return result;
+//   } else {
+//     result = input1.toString() + input2.toString();
+//   }
+//   return result;
+// }
 
-const numberResult0 = combined(5, 5, 'as-number');
-const stringResult0 = combined('5', '5', 'as-number');
-const combinedStringResult0 = combined('zack', 'kay', 'as-text');
-console.log(numberResult0);
-console.log(stringResult);
-console.log(combinedStringResult);
+// const numberResult0 = combined(5, 5, 'as-number');
+// const stringResult0 = combined('5', '5', 'as-number');
+// const combinedStringResult0 = combined('zack', 'kay', 'as-text');
+// console.log(numberResult0);
+// console.log(stringResult);
+// console.log(combinedStringResult);
 
 /**
  * Custom Types: can contain whatever type!

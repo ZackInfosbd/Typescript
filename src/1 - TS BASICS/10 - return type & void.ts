@@ -1,53 +1,53 @@
 // TODO 26 - Function return Type & void
 
 // .1
-function addReturnNumber(num1: number, num2: number) {
-  return num1 + num2;
-}
+// function addReturnNumber(num1: number, num2: number) {
+//   return num1 + num2;
+// }
 
-// .2
-function addReturnString(num1: number, num2: number) {
-  return num1.toString() + num2.toString();
-}
+// // .2
+// function addReturnString(num1: number, num2: number) {
+//   return num1.toString() + num2.toString();
+// }
 
-// .3
-function addReturnNumberExpl(num1: number, num2: number): number {
-  return num1 + num2;
-}
+// // .3
+// function addReturnNumberExpl(num1: number, num2: number): number {
+//   return num1 + num2;
+// }
 
-// .4
-function addReturnStringExpl(num1: number, num2: number): string {
-  return num1.toString() + num2.toString();
-}
+// // .4
+// function addReturnStringExpl(num1: number, num2: number): string {
+//   return num1.toString() + num2.toString();
+// }
 
-// .6
-function printResult(num: number) {
-  console.log('Result is: ' + num);
-}
-
-printResult(15);
-
-// .7
-console.log(printResult(addReturnNumber(15, 5)));
-
-// .8
-// function printResultUndefined(num: number): undefined {
+// // .6
+// function printResult(num: number) {
 //   console.log('Result is: ' + num);
 // }
-// .9
-// let variableUndefine: undefined;
 
-// .10
-function printResultUndefined(num: number): void {
-  console.log('Result is: ' + num);
-  // or
-  return;
-}
-// .11
-function printUndefined(num: number): undefined {
-  console.log('result is' + num);
-  return;
-}
+// printResult(15);
+
+// // .7
+// console.log(printResult(addReturnNumber(15, 5)));
+
+// // .8
+// // function printResultUndefined(num: number): undefined {
+// //   console.log('Result is: ' + num);
+// // }
+// // .9
+// // let variableUndefine: undefined;
+
+// // .10
+// function printResultUndefined(num: number): void {
+//   console.log('Result is: ' + num);
+//   // or
+//   return;
+// }
+// // .11
+// function printUndefined(num: number): undefined {
+//   console.log('result is' + num);
+//   return;
+// }
 
 /**
  * 1. TS INFERS the return type to number because both params are of type number

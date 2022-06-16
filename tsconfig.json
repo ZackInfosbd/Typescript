@@ -104,7 +104,7 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  },
+  }
   // "exclude": [
   //   "1 - core-types.ts",
   //   "2 - core-types objects.ts",
@@ -122,7 +122,7 @@
   //   "14 - never types.ts"
   //   // "node_modules" // would be the default
   // ]
-  "exclude": ["src/1"]
+  // "exclude": ["src/1"]
   // "include": ["app.ts"]
   // "files": ["app.ts"]
 }
