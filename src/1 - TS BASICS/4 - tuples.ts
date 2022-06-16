@@ -7,7 +7,7 @@
 //   role: [2, 'author'],
 // };
 
-const person: {
+const person0: {
   name: string;
   age: number;
   hobbies: string[];
@@ -19,13 +19,13 @@ const person: {
   role: [2, 'author'],
 };
 
-console.log(person.role);
+console.log(person0.role);
 
-person.role.push('admin');
+person0.role.push('admin');
 // person.role[1] = 10; // .1
 // person.role = [0,'admin','user'] // .2
 
-console.log(person.role);
+console.log(person0.role);
 
 /**
  * Tuples :  [1,2] => are arrays with fixed length and fixed type

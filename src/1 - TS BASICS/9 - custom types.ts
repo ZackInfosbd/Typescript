@@ -48,10 +48,10 @@ function combined(
   return result;
 }
 
-const numberResult = combined(5, 5, 'as-number');
-const stringResult = combined('5', '5', 'as-number');
-const combinedStringResult = combined('zack', 'kay', 'as-text');
-console.log(numberResult);
+const numberResult0 = combined(5, 5, 'as-number');
+const stringResult0 = combined('5', '5', 'as-number');
+const combinedStringResult0 = combined('zack', 'kay', 'as-text');
+console.log(numberResult0);
 console.log(stringResult);
 console.log(combinedStringResult);
 
