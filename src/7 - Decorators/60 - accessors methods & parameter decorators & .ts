@@ -60,7 +60,7 @@
 
 /**
 
-//  Accessor Decorator
+//  Accessor Decorator - are kinda methods - PropertyDescriptor is in common type
 * the accessor decorator function parameter types:
  target =>  prototype if we are dealing with instance or => constructor function if we are dealing static one. 
  accessor name => string
@@ -77,5 +77,8 @@
  target =>  prototype if we are dealing with instance or => constructor function if we are dealing static one. 
  method name => string
  parameter' position: number
+
+=> PropertyDescriptor: allows you to define property more details
+ for more infos about PropertyDescriptor check the documenetation
 
  */
