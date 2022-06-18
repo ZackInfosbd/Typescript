@@ -39,5 +39,7 @@
  * where else we can add decorators?
  * 1 - Classes Decorators: which excutes when the class is defined =>befors instantiation of the class.
  * 2 - Property Decorators: are decorators attached to the class properties, with function decorator(not with factory function decorator), the function doesnt contain contsructor method because it is reserved to class decorators and it recives two parameters target and property name.
+ *  the property decorator function parameter types:
+ target =>  prototype if we are dealing with instance or => constructor function if we are dealing static one.
  * property decorator executes basically when the class definition is registered by JS => executes when you define the property that has the decorator
  */
