@@ -35,6 +35,12 @@
 //   console.log('the user is an Admin');
 // }
 
+// my tenum tweaks
+// console.log(Role.ADMIN);
+// console.log(Role.user);
+// console.log(Role[0]);
+// console.log(Role['ADMIN']);
+
 /**
  * enum {NEW,OLD}
  * enum: are adde by TS automatically enumerated global constants identifiers which are human readable.
