@@ -22,3 +22,12 @@
 - Function type: Typescript types inline assigned for params(values - callbacks) and returns.
 - Unkown type: is a type that isnt unknown yet.
 - Never type: never return something.
+
+#### Typescript & ES6 Features
+
+- Var, let, const: variables declaration keyword.
+- Arrow Function: function shorter syntax, sometimes unexpected bahvior with (this)
+- Default paramter: default parameter value assignment, comes at last position.
+- Spread operator: extract&copy all the values of an array or object.
+- Rest operator: accept unlimeted amount of params. no types but tuples for arrays!
+- Arrays/Object destructuring: arrays and objects values can be accessed.

@@ -16,5 +16,5 @@
 // console.log(personCopy);
 
 /**
- * spread operator: extract all the values of an array or object
+ * spread operator: copy all the values of an array or object
  */
