@@ -1,0 +1,128 @@
+# Typescript
+
+### Typescript Types Basics
+
+#### Javascript Core-Types vs Typescript types
+
+- In JS we used to do if check types! => 1-core-types.ts
+- All JS types are applied in Typescript:
+  - inline Typescript assignment for number, string, boolean
+  - object(object,array,function):
+    - objects: type keyword to create key-value types or interfaces.
+    - arrays: inline Typescript types assignment (e.g): string | number | any []
+    - functions: inline Typescript types assignment for params and return statement
+
+#### Typescript Types
+
+- Tuple: array with fixed length and fixed types.
+- Enums: enumerated global constants identifiers which are human readable.
+		you can assign the enum with values, but it will be with numbers means you are re-assigning the indexes of the enum array.
+- Union: combined types type | type.
+- Literal types: hard coded literals 'text' (e.g 'as-number') passed as types
+- Custom types: create Custom type with help of type keyword, type CT = string | number.
+- Function type: Typescript types inline assigned for params and returns.void is assigned as return type when the function doesnt return a value.undefined cant be assigned to the return statement only if that function return no values means return exisits but doesntreturn any value
+- Unkown type: is a type that isnt unknown yet:
+	- kinda any type but not really
+	- type unknown isnt assignable to other types , but any does.
+	- if you want to assign unknow type to another type you can type runtime check it .if both are of the same type then it will be assignable.
+- Never type: never return something
+        - in our example we have assigned a function that return nothing and will never return something.
+	- infinite loop also never return a value
+	
+#### Typescript & ES6	
+
+- var,let and const, with var in if statements it is treated as global because JS doesnt know other scopes than functions and global, and if out of the block if the function is treated as global.let is block scopped, its block is between braces.
+- Arrow function with arrow funtion we can explicitely assign the types after the variable name, or inside the funtion paramters.with Arrow Function TS you can benefit a lot from short syntax of the arrow function like within callbacks of events.
+- Default function parameter has to be last in the list.
+- Spread operator: extract all the values of an array or object.
+- Rest operator: Rest parameter: it new ES6 feature, that accept unlimited amount of argumentsrest param cant be an array of value of any type,nut if we know the amount of the params we can pass the tuple TS Type.
+
+
+#### Typescript Classes
+
+- Classes: are the blueprint of the real life objects(Entities) which can be used programatically like objects({}).to make coppies or instances of those objects wherever nedded:
+ 	* the class syntax is the syntax sugar for constructor functions
+ 	* the class has fields and methods which will be constructed to object properties and methods.
+
+- Constructor function & this keyword: 
+	* do not forget to use the keyword this while building your objects even with classes,otherwise the field:(property-later) will point to any global variable with that name.
+	 * you can pass the kewyword this to a method as a param with type of the class name,that will help if you will assign that method      later on to an other object, because you know the keyword this is so tricky.
+
+- Access modifiers : Public, Private, Protected, Static, Read-only.
+	- public, private:
+	* In TS we have access modifiers, which are keywords wich allow us to access the fields-properties or methods from outside of the class,by default the public keyword is setted to public but to restrict 	the access we could use private keyword infront of the 			property/method.
+
+        - protected:
+	* protected: it is an access keyword, it has private-like behaviour but it allows the access only from the inherited classes, subclasses child classes that extended that parent one- for some overwriting 	stuff im not sure!!!.
+
+	- read-only: to preserve the property/params from overwriting.
+
+	- static:
+	 * static access modifier: it is a feature that makes the access to the class properties and methods without the need of instantiating(instance) the class => Match.pi/ Math.pow(), so the class name will 	work like a namespace or as grouping mecanism.
+ 	* static properties are accessible only from static methods, for example they can be access from the constructor, and also because this keyword is based on the instance of the class, so static 	properties and methods are statics members and detached from instances
+ 	* to access the static properties inside the class we need to use the name of the class with dot notation	
+
+- Class shorthands: without declaring the fileds, just pass your them directly as params to constrructor with own access modifiers!!!
+
+- Inheritance: we extend a class with extends kyeword, the new extended class called child class or inherited from class parent
+
+- Accessors: Setters,Getters: is a feature that allow read property and operate on it within more complex logic.
+ 	* setters - set keyword:is a feature that allow to set a value
+ 	* getter and setters which can be great for encapsulating logic and for adding extra logic when you try to read a property or to set 	a property.
+
+- Abstract classes: is when you give the structure of parent class which contains a property or a method that is not concret but the inhirited class should do that,and you force all inherited or child classes 	to have it but with own version of that 	          abstracted property or method
+		  * important !!!: can not create an instance of abstract class
+ 		  * abstracted class cant be instantiated now but inherited classes can be inherited
+
+- Singletons pattern: Singletons pattern done with private constructor: is about ensuring that you always have one instance of a certain class, this can be usefull in scenarios when you cant use static methods 	or properties or you dont want to but at the same time you want to make sure that you cant make multiple objects based on that class => just one object based on that class
+ 			* if we make the constructor private => private constructor(){} => at the time of making an instance of the class which has private constructor it shows error ,so what is the the 			solution?
+ 			* 1. can not instantiate it because constructor is private
+ 		* solution:
+ 		* make a private static property of type class name itself to store that class instance
+ 		* we make a static method to get an instance of that singleton class, we check if that class has varible that hold the class itself,in the body of that static function we use this 				keyword which referse to the class itself because it is inside static method, not like in instance this referse to that instance.
+ 		* 2. the same object, are the same instance
+* singletons pattern wont be used all the time, but can be helful in some scenarios
+
+
+#### Typescript Interfaces
+
+- Interfaces: describe the structure of an object, it wont be used as class however, but just as a custom TS Type we could say you can not assign the properties with values but just with types!!!
+
+- Classes implements interfaces: so why we use interface we can use custom type instead?
+                * notes!!!:
+                * well we can use custom types that contain union types for example or any other type, but interfaces are clearer more often you see interfaces describing the objects
+                * you can implement interface in a class, also you would be able implement custom types,means that interface can be used as a cointract a class can implement then has to adhere to.
+                * so we can say that interface can be used inside a class to force the class respects the type schema which the iinterface provides
+
+- Why interfaces : one more time!!! - why we use interfaces:
+		1 - play the role of cheking types schema.
+		2 - force the class to have some functionalities for example, and if it is adhered to multiple classes then the interface is implemented => which guranties the existance of those functionalities
+
+- Readonly modifier: readonly access modifier, is the only modifier that exists on both custom type and interface.
+
+- Extends interfaces: we can implement inheritance with interfaces
+ 		* 1. with class you can inherit from one class only, with interfaces you can from multiple interfaces
+ 		* for example you can use the interface ing´heritance-extend when for example you have some classes contains some properties(interface = to be type checked ) and other not
+
+- Interfaces fucntion type: we have said that interfaces are used to define the structure of the object
+		* interfaces can be used to define the structure of a function, because functions at the end are objects too
+ 		* it s abit different compared to defining methods in objects in interface where we put the name of the method 	greet (phrase:string):void
+
+- Optional properties & parameters: you can make optional property in interfaces by adding '?'
+ 		* you can add both optional paramters and paramter in methods including (constructor method) in classes by adding question mark, or solve the issue with default parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
