@@ -11,7 +11,7 @@
 //   name?: string;
 //   age = 30;
 
-//   constructor(n?: string) {
+//   constructor(n?: string) { //.2
 //     if (n) {
 //       this.name = n;
 //     }

@@ -42,3 +42,13 @@
 - Accessors: Setters,Getters which operate on fields and thier inputs with logic .
 - Abstract classes.
 - Singletons pattern.
+
+#### Typescript Interfaces
+
+- Interfaces: describe the structure of an object.
+- Class implements interfaces.
+- Why interfaces.
+- Readonly interface.
+- Extending interfaces.
+- Interfaces function types.
+- Optional properties & parameters.

@@ -1,15 +1,15 @@
-function Logger(cunstructor: Function) {
-  console.log('Logging...');
-  console.log(cunstructor);
-}
+// function Logger(cunstructor: Function) {
+//   console.log('Logging...');
+//   console.log(cunstructor);
+// }
 
-@Logger
-class Person {
-  name = 'zack';
-  constructor() {
-    console.log('create new person...');
-  }
-}
+// @Logger
+// class Person {
+//   name = 'zack';
+//   constructor() {
+//     console.log('create new person...');
+//   }
+// }
 
 /**
  *  * We Can Do Various Things With Decorators:
