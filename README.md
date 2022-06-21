@@ -31,3 +31,14 @@
 - Spread operator: extract&copy all the values of an array or object.
 - Rest operator: accept unlimeted amount of params. no types but tuples for arrays!
 - Arrays/Object destructuring: arrays and objects values can be accessed.
+
+#### Typescript Classes
+
+- Classes blueprint.
+- Constructor function & this keyword.
+- Access modifiers : Public, Private, Protected, Static, Read-only.
+- Class shorthands.
+- Accessors: Setters,Getters.
+- Inherited.
+- Abstract classes.
+- Singletons pattern.
