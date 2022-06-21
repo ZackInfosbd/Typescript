@@ -47,5 +47,5 @@
 // management.printEmployeeInformation();
 
 /**
- * 1. in TS we have access modifiers, which are keywords wich allow us access the fields-properties or methods from outside of the class,by default the public keyword is setted to public but to restrict the access we could use private keyword infront of the property/method.
+ * 1. in TS we have access modifiers, which are keywords wich allow us to access the fields-properties or methods from outside of the class,by default the public keyword is setted to public but to restrict the access we could use private keyword infront of the property/method.
  */

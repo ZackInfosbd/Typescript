@@ -88,5 +88,5 @@
 /**
  * extends: a keyword for inheritance from other classes
  * 1. we can take instance of parent class and inherit from even with syntax like this class ITDepartment extends Department5 {}.
- * 2. we extended from the parent class but to fix some fields like in our example with name department because the name wont be changed and it will be fixed then we fix it with the keyword super(), super() calls the constructor of parent class
+ * 2. we extended from the parent class but to fix some fields like in our example with name department because the name wont be changed and it will be fixed then with the keyword super(), super() calls the constructor of parent class
  */

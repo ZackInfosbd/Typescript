@@ -38,7 +38,7 @@
 - Constructor function & this keyword.
 - Access modifiers : Public, Private, Protected, Static, Read-only.
 - Class shorthands.
-- Accessors: Setters,Getters.
-- Inherited.
+- Inheritance: extends - super().
+- Accessors: Setters,Getters which operate on fields and thier inputs with logic .
 - Abstract classes.
 - Singletons pattern.

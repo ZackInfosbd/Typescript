@@ -88,6 +88,6 @@
 
 /**
  * class abstraction: is when you give the structure of parent class which contains a property or a method that is not concret but the inhirited class should do that,and you force all inherited or child classes to have it but with own version of that abstracted property or method
- * important !!!: van not create an instance of abstract class
+ * important !!!: can not create an instance of abstract class
  * abstracted class cant be instantiated now but inherited classes can be inherited
  */
