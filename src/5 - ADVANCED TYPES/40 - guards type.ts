@@ -101,12 +101,12 @@
 
 /**
  * guards type: it is presents in union types, to define the right type we are gettin at the run time.
- * 1. emp. is linted because the union type is with the |- or logic operator so TS doesnt know what could be the type of the employee Admin or Employee thats why we do not see the autuocompliation because TS doesnt know yet.
+ * 1. emp. is linted because the union type is with the | logic operator so TS doesnt know what could be the type of the employee Admin or Employee thats why we do not see the autuocompliation because TS doesnt know yet.
  * 2. still doesnt work because at run time employeee is not built-in type so JS will m´not know it
  * 3. make no difference still because object at the end is just object has no thing to do with properties
- * 4.solution => we can use checks with in keyword which will check existence of property in object and that also is applied with classes and its citizens properties or methods
+ * 4.solution => we can use checks with (in) keyword which will check existence of property in object and that also is applied with classes and its citizens properties or methods
  * // OR
- * 5. we can make checks with the help of instanceof still JS operator; but not that if the class implements interfaces wont work because interface is a TS thing and wont be used at the run time
+ * 5. we can make checks with the help of instanceof still JS operator; but note that with interfaces wont work because interface is a TS thing and wont be used at the run time
  *
  * ======> think it is better to use instanceof while checking
  * so type guard is just an idea or approach of checking if certain property or method exists before you try to use it, or if you can do something with type before u use it

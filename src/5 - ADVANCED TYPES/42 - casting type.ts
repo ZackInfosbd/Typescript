@@ -1,8 +1,8 @@
-const paragraph1 = document.querySelector('p'); // .1
-const paragraph2 = document.getElementById('message-output'); //.2
+// const paragraph1 = document.querySelector('p'); // .1
+// const paragraph2 = document.getElementById('message-output'); //.2
 
-console.log(paragraph1);
-console.log(paragraph2);
+// console.log(paragraph1);
+// console.log(paragraph2);
 
 //.3
 // const userInput1 = document.getElementById('user-input');
@@ -25,10 +25,10 @@ console.log(paragraph2);
 
 // or
 
-const userInput1 = document.getElementById('user-input');
-if (userInput1) {
-  (userInput1 as HTMLInputElement).value = 'Hi there';
-}
+// const userInput1 = document.getElementById('user-input');
+// if (userInput1) {
+//   (userInput1 as HTMLInputElement).value = 'Hi there';
+// }
 
 /**
  * Type Casting: helps you to tell TS that some value is of a specific type where TS is not able to detect it on its own but you as a devlopper you know that will be the case.

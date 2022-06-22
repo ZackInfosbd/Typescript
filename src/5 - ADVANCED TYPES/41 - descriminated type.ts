@@ -40,5 +40,7 @@
 // moveAnimal2({ gender: 'horse', runningSpeed: 80 });
 
 /**
- * Descriminated union: is a pattern which we can use when we work with union types and all is about checking the property which is in comon for both interfaces/object to diffrenciate them and in place of give type string for axample we can narrow it to more specified value like we did in our example, that makes implementing type guards easier!!! and also eliminate the danger of mistyping , it is available when you working with objects and union types;
+ * Descriminated union: type of type guard - is a pattern which helps with guard types, use when we work with union types and all is about checking the property which is in comon for both interfaces/object to diffrenciate them and in place of give type string for example we can narrow it to more specified value like we did in our example, that makes implementing type guards easier!!! and also eliminate the danger of mistyping , it is available when you working with objects and union types;
  */
+
+// descriminated types => guards type:check the final type of complex intersected  within if blockes => intersection type: types combination of union types
