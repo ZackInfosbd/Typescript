@@ -33,6 +33,6 @@
  * 1. in the first example we have gave precised generic type string type to Promise type because we know that it will return string
  * 2. in the first example we have gave precised generic type number type to Promise type because we know that it will return number, thats why the split function did not work because the value returned is a number
  *
- * ==> you can build your own generic classes or functions you may do something totally different
+ * ==> you can build your own generic classes or functions which may do something totally different
  * ==> Generic types help you to get additional type information if you got more complex class or function that does something with the data that is comming in, in a way that we dont care about data being of one particualr type but you want to store the type information of the incoming data to get better TS support whenever work with generic types
  */
