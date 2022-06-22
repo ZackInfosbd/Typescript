@@ -1,16 +1,16 @@
-interface ErrorContainer {
-  //{email: 'Not a valid email, userName: 'Must start with a character}
+// interface ErrorContainer {
+//   //{email: 'Not a valid email, userName: 'Must start with a character}
 
-  // -1
-  // id: string;
-  // -2
-  [key: string]: string;
-}
+//   // -1
+//   // id: string;
+//   // -2
+//   [key: string]: string;
+// }
 
-const error: ErrorContainer = {
-  email: 'Not a valid email!',
-  userName: 'Must start with a charakter',
-};
+// const error: ErrorContainer = {
+//   email: 'Not a valid email!',
+//   userName: 'Must start with a charakter',
+// };
 
 /**
  * index properties: are TS after all but they re  not really much types focused instead this feature is there to help us write felxible code, and allow us create objects whichg are more flexible regarding the properties they might hold

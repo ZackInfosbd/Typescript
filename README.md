@@ -52,3 +52,16 @@
 - Extending interfaces.
 - Interfaces function types.
 - Optional properties & parameters.
+
+#### Typescript Advanced Types
+
+- Typescript offers advanced types that can become handy in certain situations you migh be facing in projects:
+
+  - Intersection type.
+  - Guards type.
+  - Descriminated type.
+  - Casting type.
+  - Index properties type.
+  - Function overloads type.
+  - ptional chaining.
+  - Nullish coalescing.

@@ -40,6 +40,6 @@
  * making types with custom types/interfaces and third Custom type that combine them together with & and logic operator
  * or make two interfaces and third interface that extends them both
  * with intersection intersection union types could be preferable due to the ability that custom types can preserve union types and then combine them later on.
- * so intersection union = combination of different type || intersection union of the type in common
+ * so intersection union = combination of different type => intersection union of the type in common
 
 *  */
