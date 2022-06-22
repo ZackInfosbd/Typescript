@@ -65,3 +65,14 @@
   - Function overloads type.
   - ptional chaining.
   - Nullish coalescing.
+
+#### Typescript Generics
+
+- Typescript offers generics to write flexible code but still stricted type.
+
+- Buil-in generics.
+- Function generics.
+- Generic constraints: extends - keyof
+- Class generics
+- Generic uitility types: Partial, Readonly, Required...
+- Generic type vs Union type.
