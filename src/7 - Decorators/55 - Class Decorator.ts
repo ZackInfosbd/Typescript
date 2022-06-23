@@ -13,7 +13,7 @@
 
 /**
  *  * We Can Do Various Things With Decorators:
- * thats why there many frameworks like Angular or Nestjs which rely heavily on decorators.
+ * thats why there many frameworks like Angular or Nestjs which rely heavily on decorators. it is all about meta-programmimg, meand we dont use decorators often to have direct impact on the end-user but instead we use decorators to e.g get one of our classes to be used correctly or a method on a class or properties even params or we do some hidden transformation...
 =================================================================================
  * decorators are just functions applied to classes and its citizens, decorators are suited feature for meta programming,decorators excutes when the class is defined not when the class is instantiated.
 - TODO note:

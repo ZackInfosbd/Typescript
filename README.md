@@ -69,10 +69,20 @@
 #### Typescript Generics
 
 - Typescript offers generics to write flexible code but still stricted type.
-
 - Buil-in generics.
 - Function generics.
 - Generic constraints: extends - keyof
 - Class generics
 - Generic uitility types: Partial, Readonly, Required...
 - Generic type vs Union type.
+
+#### Typescript Decorators
+
+- Class decorators.
+- Decorator factories functions.
+- Building more usefull decorators and adding multiple decorator to a class.
+- Property, accessor methods, methods and parameter decorators.
+- Decorators execution order.
+- Return class from decorators.
+- Accessors, method decorator return.
+- Validator decorators examples.
