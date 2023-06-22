@@ -50,5 +50,6 @@
 // management.printReports();
 
 /**
- * protected: it is an access keyword, it has private-like behaviour but it allows the access only from the inherited classes, subclasses child classes that extended that parent one- for some overwriting stuff im not sure!!!.
+ * protected: it is an access modifier keyword, it has private-like behaviour but it allows the access only from the inherited classes, subclasses child classes that extended that parent one-
+ * it is used also to overide fields/methods of the base class means oerride and use other implementations rather than the ones exist im the base one.
  */
