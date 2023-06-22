@@ -68,7 +68,8 @@
 // console.log(Department8.createEmployee('zack'));
 
 /**
- * static access modifier: it is a feature that makes the access to the class properties and methods without the need of instantiating(instance) the class => Match.pi/ Math.pow(), so the class name will work like a namespace or as grouping mecanism.
- * static properties are accessible only from static methods, for example they can be access from the constructor, and also because this keyword is based on the instance of the class, so static properties and methods are statics members and detached from instances
- * to access the static properties inside the class we need to use the name of the class with dot notation
+ * static access modifier: static methods are used often for utility functions, that u want to group or map to a class,it is a feature that makes the access to the class properties and methods without the need of instantiating(instance) the class => Match.pi/ Math.pow(), so the class name will work like a namespace or as grouping mecanism.
+ * static properties are accessible only from static methods, for example they can be accessed from the constructor, and also because this keyword is based on the instance of the class, so static properties and methods are statics members and detached from instances.
+ * if you want to access your static properties from inside class you need to use the name of the class with dot furthered. => department.fiscalYear
+ * to access the static properties inside the class we need to use the name of the class with dot notation.
  */
