@@ -25,6 +25,8 @@
 
 /**
  * we can implement inheritance with interfaces
- * 1. with class you can inherit fron class only, with interfaces you can from multiple interfaces
- * for example you can use the interface ing´heritance-extend when for example you have some classes contains some properties (interface = to be type checked ) and other not
+ * 1. with class you can inherit from one class only, with interfaces you can from multiple interfaces.
+ 
+ * for example you can use the interface inheritance-extend when
+you want for example split the typing checking with interfaces and dedicate one interface to an object/class and the other interface will implemented for an other object/class.
  */
