@@ -33,5 +33,5 @@
 
 /**
  * 1. you can make optional property in interfaces by adding '?'
- * 2. you can add both optional paramters and paramter in methods including (constructor method) in classes by adding question mark, or solve the issue with default parameter
+ * 2. you can add both optional paramters in methods including (constructor method) in classes by adding question mark, or solve the issue with default parameter
  */
