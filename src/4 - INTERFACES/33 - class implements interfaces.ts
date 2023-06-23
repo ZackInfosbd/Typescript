@@ -55,7 +55,11 @@
 /**
  * 1.so why we use interface we can use custom type instead?
  * notes!!!:
- * well we can use custom tpes that contain union types for example or any other type, but interfaces are clearer more often you see interfaces describing the objects
- * you can implement interface in a class, also you would be able implement custom types,means that interface can be used as a cointract a class can implement then has to adhere to.
- * so we can say that interface can be used inside a class to force the class respects the type schema which the iinterface provides
+ * well we can use custom types that contain union types for example or any other type, but interfaces are clearer more often you see interfaces describing the objects.
+ 
+ * you can implement interface in a class, also you would be able implement custom types,means that interface can be used as a contract a class can implement then has to adhere to.
+ 
+ * so we can say that interface can be used inside a class to force the class respects the type schema which the interface provides.
+
+* you can add to the class more fields,that they do not exist in the interface and TS will not yell at you because the class can to implement more than one interface, means through adding more fields TS treat it like this type maybe is in an other interfcae!!!.
  */
