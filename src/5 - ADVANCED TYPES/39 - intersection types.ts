@@ -34,7 +34,8 @@
 // type universal = Combinable & Numeric;
 
 /**
- * Typescript offers advanced types that can become handy in certain situations you migh be facing in projects
+ * Typescript offers advanced types that can become handy in certain situations you migh be facing in projects.
+ 
  * Itersection types: allow us combine other types
  * 1. you can make the intersection type through:
  * making types with custom types/interfaces and third Custom type that combine them together with & and logic operator
