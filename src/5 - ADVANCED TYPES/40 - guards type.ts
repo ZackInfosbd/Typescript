@@ -100,6 +100,7 @@
 // useVehicle2(v2);
 
 /**
+ * we use guard type mainly when will be a possiblity that any given input could take 2 types at once (union types) where typescript is not able to decide which type TS will pick up.as we said thats why type guard could be done and applied on union type mostly.
  * guards type: it is presents in union types, to define the right type we are gettin at the run time.
  * 1. emp. is linted because the union type is with the | logic operator so TS doesnt know what could be the type of the employee Admin or Employee thats why we do not see the autuocompliation because TS doesnt know yet.
  * 2. still doesnt work because at run time employeee is not built-in type so JS will m´not know it
