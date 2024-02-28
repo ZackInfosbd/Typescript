@@ -1,6 +1,8 @@
-import { Cat, Dog } from './2024/design patterns/TS/import-export-ES6/animals';
+// Factory Use Case Example Code
+import ChairFactory from './2024/design patterns/factory/chair-factory';
 
-const CAT = new Cat('Cosmo', 8);
-console.log(CAT.name);
-const DOG = new Dog('Rusty', 12);
-console.log(DOG.name);
+const SCHAIR = ChairFactory.getChair('SmallChair');
+console.log(SCHAIR.getDimensions());
+
+const MCHAIR = ChairFactory.getChair('MediumChair');
+console.log(MCHAIR.getDimensions());
