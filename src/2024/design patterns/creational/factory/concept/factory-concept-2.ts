@@ -1,36 +1,36 @@
-type TGender2 = 'MALE' | 'FEMALE';
+type TGender = 'MALE' | 'FEMALE';
 
-interface IPerson2 {
+interface IPerson {
   name: string;
   age: number;
-  gender: TGender2;
+  gender: TGender;
 }
 
-class Person2 implements IPerson2 {
+class Person implements IPerson {
   name: string;
   age: number;
   gender: TGender;
 
-  constructor(n: string, age: number, g: TGender2) {
+  constructor(n: string, age: number, g: TGender) {
     this.name = n;
     this.age = age;
     this.gender = g;
   }
 }
 
-class Female2 extends Person2 {
+class Female extends Person {
   constructor() {
     super('Jane', 20, 'FEMALE');
   }
 }
 
-class Male2 extends Person {
+class Male extends Person {
   constructor() {
     super('Joe', 30, 'MALE');
   }
 }
 
-class PersonFactory2 {
+class PersonFactory {
   static getPerson(gender: string): IPerson {
     if (gender === 'MALE') {
       return new Male();
@@ -40,8 +40,8 @@ class PersonFactory2 {
   }
 }
 
-const person12 = PersonFactory.getPerson('MALE');
-const person22 = PersonFactory.getPerson('FEMALE');
+const person1 = PersonFactory.getPerson('MALE');
+const person2 = PersonFactory.getPerson('FEMALE');
 
-console.log(person12);
+console.log(person1);
 console.log(person2);
