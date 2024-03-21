@@ -2,7 +2,7 @@
 
 import Light from './light';
 import Switch from './switch';
-import SwitchOnCommand from './switch-on-command';
+import SwitchOnCommand from './iswitch-on-command';
 import SwitchOffCommand from './switch-off-command';
 
 // Create a receiver
