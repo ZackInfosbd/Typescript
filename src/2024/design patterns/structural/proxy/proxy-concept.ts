@@ -1,6 +1,8 @@
 // A Proxy Concept Example
 
-// for more explaination, check out the class diagram
+// for more explaination, check out the class diagram.
+// The Proxy pattern is a structural design pattern that provides an object that acts as a substitute for a real service object used by a client. A proxy receives client requests, does some work (access control, caching, etc.) and then passes the request to a service object.
+// Or search by the name of the pattern in the internet.
 
 interface ISubject {
   // An interface implemented by both the Proxy and Real Subject
