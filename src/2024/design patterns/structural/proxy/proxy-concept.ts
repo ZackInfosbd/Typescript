@@ -1,5 +1,7 @@
 // A Proxy Concept Example
 
+// for more explaination, check out the class diagram
+
 interface ISubject {
   // An interface implemented by both the Proxy and Real Subject
   request(): void;
