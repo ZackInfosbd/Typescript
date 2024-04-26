@@ -1,7 +1,7 @@
 // The Flyweight Use Case Example
 
 import Table from './table';
-import FlyweightFactory from './flyweight-factory';
+import FlyweightFactory from './flywight-factory';
 
 const TABLE = new Table(3, 3);
 TABLE.rows[0].columns[0].data = 'abra';
