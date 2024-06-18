@@ -19,3 +19,11 @@ The Factory Design Pattern is a fundamental concept in software design that emph
 2. **Scalability**: Adding new types of objects to a system can be done easily by introducing new factories or extending existing ones, without affecting the client code.
 
 3. **Decoupling**: It helps in decoupling the code that generates objects from the code that uses objects. This makes the system easier to manage, extend, and maintain.
+
+### Use Cases
+
+- **Complex Object Creation**: When the creation of an object involves complex processes not necessary to expose to the client.
+
+- **Framework Integration**: When integrating with frameworks, often only an interface is provided, and the actual implementation is left to the developer. Factories can be used to instantiate the required classes that implement these interfaces.
+
+- **Dynamic Configuration**: In scenarios where the type of objects to create can change dynamically based on external factors (like configuration files or user input), factories can dynamically decide which class instantiation is necessary.
