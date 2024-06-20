@@ -19,3 +19,11 @@ The Prototype Design Pattern is a creational design pattern that involves creati
 3. **Reduces Subclassing**: Prototype patterns can reduce the need for creating subclasses for factory methods when object configurations are numerous and dynamic.
 
 4. **Optimizes Code**: Helps in optimizing code structure by reducing the need for new keyword and the associated class instantiation logic.
+
+## Use Cases
+
+- **Configurable Systems**: In systems where objects need to be created that match a certain configuration or state dynamically.
+
+- **Performance Optimization**: When object creation is a performance bottleneck and a similar object already exists.
+
+- **Complex Object Creation**: When the process of creating an object is more complex than copying an existing object.
