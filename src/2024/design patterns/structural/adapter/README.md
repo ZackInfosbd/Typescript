@@ -1,0 +1,9 @@
+# Adapter Design Pattern
+
+The Adapter Design Pattern is a structural design pattern that allows objects with incompatible interfaces to collaborate. It acts as a bridge between two incompatible interfaces by converting the interface of a class into another interface that a client expects. This pattern is especially useful when you want to integrate new features or components into existing systems without altering those systems.
+
+## How It Works
+
+- **Target Interface**: This is the interface that the client expects or works with.
+- **Adaptee**: This is the class that has the existing interface that needs adapting.
+- **Adapter**: This is the class that implements the Target interface and contains a reference to an Adaptee object. It translates calls to the Target interface into calls to the Adaptee interface.
