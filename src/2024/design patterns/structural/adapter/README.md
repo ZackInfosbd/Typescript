@@ -7,3 +7,10 @@ The Adapter Design Pattern is a structural design pattern that allows objects wi
 - **Target Interface**: This is the interface that the client expects or works with.
 - **Adaptee**: This is the class that has the existing interface that needs adapting.
 - **Adapter**: This is the class that implements the Target interface and contains a reference to an Adaptee object. It translates calls to the Target interface into calls to the Adaptee interface.
+
+## Implementation Steps
+
+1. **Identify the Target Interface**: This is the interface that your application expects to work with.
+2. **Create the Adapter Class**: This class implements the Target interface.
+3. **Add a Reference to the Adaptee**: The Adapter class holds a reference to the Adaptee.
+4. **Implement the Target Interface**: The Adapter class translates the Target interface calls to the Adaptee's interface.
