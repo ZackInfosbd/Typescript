@@ -14,3 +14,9 @@ The Adapter Design Pattern is a structural design pattern that allows objects wi
 2. **Create the Adapter Class**: This class implements the Target interface.
 3. **Add a Reference to the Adaptee**: The Adapter class holds a reference to the Adaptee.
 4. **Implement the Target Interface**: The Adapter class translates the Target interface calls to the Adaptee's interface.
+
+## Benefits
+
+- **Increased Flexibility**: Allows existing classes to work together without modifying their source code.
+- **Reusability**: Enables the reuse of existing functionality through an adapter.
+- **Decoupling**: Clients are decoupled from the specific implementations of the interfaces they use.
