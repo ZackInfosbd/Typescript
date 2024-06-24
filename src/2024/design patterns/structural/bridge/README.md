@@ -12,3 +12,9 @@ The implementation of the Bridge pattern involves the following key components:
 - **ConcreteImplementor**: Implements the Implementor interface and defines its concrete implementation.
 
 The Abstraction contains a reference to the Implementor. Clients interact with the Abstraction, which delegates the work to the Implementor.
+
+## Key Concepts
+
+- **Decoupling Interface and Implementation**: The Bridge pattern decouples an abstraction from its implementation so that the two can vary independently.
+- **Composition over Inheritance**: The pattern prefers composition (has-a relationship) over inheritance (is-a relationship), providing more flexibility in changing the implementation at runtime.
+- **Enhanced Extensibility**: It's easier to extend the abstraction and implementation hierarchies independently.
