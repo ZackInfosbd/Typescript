@@ -11,3 +11,7 @@ Imagine a scenario in a customer support system where a request can be handled b
 - **Decoupling of Request Sender and Receivers**: The sender of a request does not need to know which part of the chain will handle the request, which simplifies the code and improves flexibility.
 - **Dynamic Reconfiguration**: Handlers in the chain can be dynamically added or changed, allowing more flexibility in how requests are handled.
 - **Reduced Coupling**: The pattern helps to reduce coupling by avoiding the need for the sender to have explicit knowledge of the handler's implementation.
+
+## Implementation Example (TypeScript)
+
+Below is a simplified example of implementing the Chain of Responsibility pattern in TypeScript:
