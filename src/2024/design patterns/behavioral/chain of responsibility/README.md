@@ -15,3 +15,15 @@ Imagine a scenario in a customer support system where a request can be handled b
 ## Implementation Example (TypeScript)
 
 Below is a simplified example of implementing the Chain of Responsibility pattern in TypeScript:
+
+## When to Use
+
+- When more than one object can handle a request, and the handler is not known in advance.
+- When you want to issue a request to one of several objects without specifying the receiver explicitly.
+- To decouple the sender and receiver of a request based on the type of request.
+
+The Chain of Responsibility pattern is particularly useful in scenarios where a request might be handled by multiple handlers, and the specific handler is not known in advance or might change dynamically.
+
+---
+
+This format provides a clear and structured way to document the Chain of Responsibility design pattern in your README.md, making it easier for others to understand and implement in their projects.
