@@ -11,3 +11,11 @@ Imagine you're creating a simple mathematical expression evaluator that can perf
 - **Flexibility**: New expressions and grammar rules can be added easily by defining new terminal and non-terminal expressions.
 - **Separation of Concerns**: Separates the grammar definition and interpretation logic from the main application logic.
 - **Reusability**: The grammar and interpreter can be reused across different applications that require similar expression evaluation.
+
+## When to Use
+
+- When there is a language to interpret, and you can represent statements in the language as abstract syntax trees (ASTs).
+- When the grammar of the language is simple. For complex grammars, the pattern can become cumbersome and hard to manage.
+- When efficiency is not a critical concern. The Interpreter pattern can be less efficient for certain kinds of parsing tasks compared to other parsing techniques.
+
+The Interpreter pattern is a powerful tool for scenarios requiring the interpretation of sentences in a language, especially in domain-specific languages and simple scripting languages. However, for complex grammars or performance-critical applications, alternative approaches or tools might be more appropriate.
