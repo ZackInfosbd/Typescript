@@ -5,3 +5,9 @@ The Interpreter design pattern is a behavioral design pattern that defines a rep
 ## Concept
 
 Imagine you're creating a simple mathematical expression evaluator that can perform operations like addition and multiplication on integers. Instead of writing a complex series of if-else statements to parse and evaluate expressions, you can use the Interpreter pattern to define a grammar for these expressions, represent expressions as an abstract syntax tree (AST), and then interpret these expressions.
+
+## Benefits
+
+- **Flexibility**: New expressions and grammar rules can be added easily by defining new terminal and non-terminal expressions.
+- **Separation of Concerns**: Separates the grammar definition and interpretation logic from the main application logic.
+- **Reusability**: The grammar and interpreter can be reused across different applications that require similar expression evaluation.
