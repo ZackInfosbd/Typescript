@@ -10,3 +10,11 @@ Imagine you're designing a remote control for various electronic devices like a 
 - **Extension**: New commands can be added without changing existing code, which follows the open/closed principle.
 - **Composite Commands**: You can compose multiple commands into a single command to implement complex operations.
 - **Undo/Redo**: Since a command is an object that encapsulates all details of an action, it's easy to store the command's history for undo/redo operations.
+
+## When to Use
+
+- When you need to parameterize objects according to an action to perform.
+- When you need to create and execute requests at different times.
+- When you need to support undo, logging, or transaction functionality.
+
+The Command pattern is widely used in GUI applications to handle actions triggered by various controls (like buttons, menu items, etc.). It's also useful in operations that require transactions, logging, or queuing.
