@@ -12,3 +12,11 @@ Imagine a scenario where various components, such as buttons, text inputs, and s
 - **Centralized Control**: The mediator centralizes complex communications and control logic between objects in the system.
 - **Simplifies Object Protocols**: Reduces the subclasses that deal with communications between objects, simplifying the overall system structure.
 - **Abstracts How Objects Cooperate**: Makes it easier to understand and maintain the interactions between components.
+
+## When to Use
+
+- When there are many objects that interact in well-defined but complex ways, resulting in a high degree of coupling that hampers readability and maintainability.
+- When you want to centralize control or complex communication logic in a system to facilitate future modifications or extensions.
+- When you need to facilitate communication between various components but want to avoid tight coupling between them.
+
+The Mediator pattern is particularly useful in the development of complex user interfaces, communication systems, and scenarios where objects need to interact in a flexible and efficient manner.
