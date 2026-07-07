@@ -1,35 +1,21 @@
-// type Authenticatable = {
-//   email: string;
-//   password: string;
-
-//   login(): void;
-//   logout(): void;
-// };
-
-interface Authenticatable {
-  email: string;
-  password: string;
-
-  login(): void;
-  logout(): void;
-}
-// one from many differences of interfaces vs type - Declaration mergin:
-// where the interface can merge the both declaration of the interfaces.
-interface Authenticatable {
-  role: string;
-}
-
-let user: Authenticatable;
-
-user = {
-  email: 'test@example.com',
-  password: 'ajdhdg',
-  login() {
-    // reach out to database, check credentials, create a session.
-  },
-  logout() {
-    // clear the session.
-  },
-
-  role: 'ADMIN',
+type FileSource = { path: string };
+const fileSource: FileSource = {
+  path: 'some/path/to/file.csv',
 };
+
+type DBSource = { connectionUrl: string };
+const dbSource: DBSource = {
+  connectionUrl: 'some-connection-url',
+};
+
+type Source = FileSource | DBSource;
+
+function loadData(source: Source) {
+  if ('path' in source) {
+    source.path; // // => use that to open the file
+
+    return;
+  }
+
+  // source.connectionUrl; // // => to reach out to database
+}

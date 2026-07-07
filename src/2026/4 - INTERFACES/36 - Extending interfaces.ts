@@ -6,6 +6,10 @@
 //   logout(): void;
 // }
 
+// interface AuthenticatableAdmin extends Authenticatable {
+//   role: 'admin' | 'superAdmin';
+// }
+
 // class AuthenticatableUser implements Authenticatable {
 //   constructor(
 //     public userName: string,
@@ -20,4 +24,8 @@
 //   logout(): void {
 //     //
 //   }
+// }
+
+// function authenticate(user: Authenticatable) {
+//   user.login();
 // }

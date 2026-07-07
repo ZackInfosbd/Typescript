@@ -21,3 +21,7 @@
 //     //
 //   }
 // }
+
+// function authenticate(user: Authenticatable) {
+//   user.login();
+// }
