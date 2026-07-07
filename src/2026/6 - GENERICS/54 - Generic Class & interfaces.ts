@@ -1,10 +1,10 @@
-class User<T> {
-  constructor(public id: T) {}
-}
+// class User<T> {
+//   constructor(public id: T) {}
+// }
 
-const user = new User('i1');
-user.id;
+// const user = new User('i1');
+// user.id;
 
-interface Role<T> {
-  admin: T;
-}
+// interface Role<T> {
+//   admin: T;
+// }

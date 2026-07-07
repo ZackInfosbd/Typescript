@@ -1,32 +1,32 @@
-// JS typeof operator
+// // JS typeof operator
 
-const username = 'zach';
-// let username = 'zach'
+// const username = 'zach';
+// // let username = 'zach'
 
-console.log(typeof username);
+// console.log(typeof username);
 
-// TS - also does have typeof???!!!!
+// // TS - also does have typeof???!!!!
 
-type UserName = typeof username; // // play with the username variable above to see the difference
+// type UserName = typeof username; // // play with the username variable above to see the difference
 
-const settings = {
-  difficulty: 'easy',
-  minLevel: 10,
-  didStart: false,
-  players: ['John', 'Jane'],
-};
-
-// type Settings = {
-//   difficulty: string;
-//   minLevel: number;
-//   didStart: boolean;
-//   players: string[ ];
+// const settings = {
+//   difficulty: 'easy',
+//   minLevel: 10,
+//   didStart: false,
+//   players: ['John', 'Jane'],
 // };
 
-type Settings = typeof settings;
+// // type Settings = {
+// //   difficulty: string;
+// //   minLevel: number;
+// //   didStart: boolean;
+// //   players: string[ ];
+// // };
 
-function loadData(settings: Settings) {
-  // ...
-}
+// type Settings = typeof settings;
 
-loadData(settings);
+// function loadData(settings: Settings) {
+//   // ...
+// }
+
+// loadData(settings);
