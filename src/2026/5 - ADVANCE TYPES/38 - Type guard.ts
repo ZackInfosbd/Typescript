@@ -19,3 +19,35 @@
 
 //   // source.connectionUrl; // // => to reach out to database
 // }
+
+// // More on type Guard - classes using "instanceOf"
+
+// class User {
+//   constructor(public name: string) {}
+
+//   join() {
+//     // ...
+//   }
+// }
+
+// class Admin {
+//   constructor(permissions: string[]) {}
+
+//   scan() {
+//     // ...
+//   }
+// }
+
+// const user = new User('zach');
+// const admin = new Admin(['ban', 'restore']);
+
+// type Entity = User | Admin;
+
+// function init(entity: Entity) {
+//   if (entity instanceof User) {
+//     entity.join();
+//     return;
+//   }
+
+//   entity.scan();
+// }

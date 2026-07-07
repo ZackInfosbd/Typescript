@@ -12,9 +12,15 @@ const dbSource: DBSource = {
 
 type Source = FileSource | DBSource;
 
+function isFile(source: Source) {
+  return source.type === 'file';
+}
+
 function loadData(source: Source) {
   //   if ('path' in source) {
-  if (source.type === 'file') {
+  //   if (source.type === 'file') {
+  if (isFile(source)) {
+    // // Type Predicates
     source.path; // // => use that to open the file
 
     return;
