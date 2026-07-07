@@ -1,0 +1,5 @@
+function merge<T, U>(a: T, b: U) {
+  return [a, b];
+}
+
+const ids = merge(1, 'max');
