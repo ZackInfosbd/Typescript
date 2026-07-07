@@ -1,41 +1,35 @@
-class User {
-  private _firstName: string = '';
-  private _lastName: string = '';
+// type Authenticatable = {
+//   email: string;
+//   password: string;
 
-  set firstName(name: string) {
-    if (name.trim() === '') throw Error('Invalid first name');
+//   login(): void;
+//   logout(): void;
+// };
 
-    this._firstName = name;
-  }
+interface Authenticatable {
+  email: string;
+  password: string;
 
-  set lastName(name: string) {
-    if (name.trim() === '') throw Error('Invalid last name');
-
-    this._lastName = name;
-  }
-
-  get fullName() {
-    return this._firstName + ' ' + this._lastName;
-  }
-
-  static eid = 'USER';
-
-  static greet() {
-    console.log('Hello');
-  }
+  login(): void;
+  logout(): void;
+}
+// one from many differences of interfaces vs type - Declaration mergin:
+// where the interface can merge the both declaration of the interfaces.
+interface Authenticatable {
+  role: string;
 }
 
-console.log(User.eid);
-console.log(User.greet());
+let user: Authenticatable;
 
-class Employee extends User {
-  constructor(public jobTitle: string) {
-    super();
+user = {
+  email: 'test@example.com',
+  password: 'ajdhdg',
+  login() {
+    // reach out to database, check credentials, create a session.
+  },
+  logout() {
+    // clear the session.
+  },
 
-    // super.firstName = 'Max';
-  }
-
-  work() {
-    // ..
-  }
-}
+  role: 'ADMIN',
+};
