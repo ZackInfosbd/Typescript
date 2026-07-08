@@ -1,8 +1,8 @@
-function add(a: number, b: number) {
-  return a + b;
-}
+// function add(a: number, b: number) {
+//   return a + b;
+// }
 
-type AddFn = typeof add;
-type ReturnValueType<T> = T extends (...args: any[]) => infer RV ? RV : T;
+// type AddFn = typeof add;
+// type ReturnValueType<T> = T extends (...args: any[]) => infer RV ? RV : T;
 
-type AddFnReturnValueType = ReturnValueType<AddFn>;
+// type AddFnReturnValueType = ReturnValueType<AddFn>;
