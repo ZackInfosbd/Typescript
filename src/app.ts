@@ -3,12 +3,40 @@ function Log(target: any, propertyName: string) {
   console.log(target, propertyName);
 }
 
+function Log2(target: any, name: string, descriptor: PropertyDescriptor) {
+  console.log('Accesseor decorator!');
+  console.log(target);
+  console.log(name);
+  console.log(descriptor);
+}
+
+function Log3(
+  target: any,
+  name: string | symbol,
+  descriptor: PropertyDescriptor,
+) {
+  console.log('Method decorator');
+  console.log(target);
+  console.log(name);
+  console.log(descriptor);
+}
+
+function Log4(target: any, name: string | symbol, position: number) {
+  console.log('Parameter decorator');
+  console.log(target);
+  console.log(name);
+  console.log(position);
+}
+
 class Product1 {
-  @Log
+  // property decorator
+  // @Log
   title: string;
   description: string;
   private _price: number;
 
+  // accessor decorator
+  @Log2
   set price(val: number) {
     if (val > 0) {
       this._price = val;
@@ -23,23 +51,34 @@ class Product1 {
     this._price = p;
   }
 
-  getPriceWithTax(tax: number) {
+  // method decorator
+  @Log3
+  getPriceWithTax(@Log4 tax: number) {
     return this._price + (this._price * tax) / 100;
   }
 }
 
-const product = new Product1('shoes', 'realxing for foot', 0);
-
-console.log(typeof product);
-console.log(product);
-const productPrice = product.getPriceWithTax(17);
-console.log(productPrice);
-
 /**
- * where else we can add decorators?
- * 1 - Classes Decorators: which excutes when the class is defined =>befors instantiation of the class.
- * 2 - Property Decorators: are decorators attached to the class properties, with function decorator(not with factory function decorator), the function doesnt contain contsructor method because it is reserved to class decorators and it recives two parameters target and property name.
- *  the property decorator function parameter types:
- target =>  prototype if we are dealing with instance or => constructor function if we are dealing static one.
- * property decorator executes basically when the class definition is registered by JS => executes when you define the property that has the decorator
+
+//  Accessor Decorator - are kinda methods - PropertyDescriptor is in common type
+* the accessor decorator function parameter types:
+ target =>  prototype if we are dealing with instance or => constructor function if we are dealing static one. 
+ accessor name => string
+ descriptor: PropertyDescriptor
+ ================================================================================
+//  Method Decorator - same almos like accessor decorator diff in descriptor
+ * the method decorator function parameter types:
+ target =>  prototype if we are dealing with instance or => constructor function if we are dealing static one. 
+ method name => string
+ descriptor: PropertyDescriptor
+ ================================================================================
+//  Parameter Decorator - exceutes before method decorator!!!
+ * the parameter decorator function parameter types:
+ target =>  prototype if we are dealing with instance or => constructor function if we are dealing static one. 
+ method name => string
+ parameter' position: number
+
+=> PropertyDescriptor: allows you to define property more details
+ for more infos about PropertyDescriptor check the documenetation
+
  */
