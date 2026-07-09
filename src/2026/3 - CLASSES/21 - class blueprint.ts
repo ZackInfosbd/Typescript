@@ -19,13 +19,13 @@
 // }
 
 // typescript blueprint shortcut
-class User {
-  constructor(
-    public name: string,
-    public age: number,
-  ) {}
-}
+// class User {
+//   constructor(
+//     public name: string,
+//     public age: number,
+//   ) {}
+// }
 
-export const user = new User('zack', 23);
+// export const user = new User('zack', 23);
 
-console.log(user);
+// console.log(user);
