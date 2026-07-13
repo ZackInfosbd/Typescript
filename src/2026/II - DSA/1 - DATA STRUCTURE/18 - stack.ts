@@ -6,16 +6,12 @@
 //   constructor(public value: T) {}
 // }
 
-// class Stack<T> {
+// class Stack<T extends number> {
 //   first?: StackNode<T>;
 //   length = 0;
 
 //   push(value: T) {
 //     const newNode = new StackNode(value);
-
-//     if (this.length === 0) {
-//       this.first = newNode;
-//     }
 
 //     newNode.next = this.first;
 //     this.first = newNode;
@@ -40,18 +36,33 @@
 //     return temp;
 //   }
 
+//   getMin(): T | undefined {
+//     if (!this.first) return undefined;
+
+//     let min = this.first.value;
+//     let current = this.first.next;
+
+//     while (current) {
+//       if (current.value < min) {
+//         min = current.value;
+//       }
+//       current = current.next;
+//     }
+
+//     return min;
+//   }
+
 //   getNumberOfElements() {
 //     return this.length;
 //   }
 
 //   print() {
 //     let current = this.first;
-//     console.log('Current: ', current);
 
-//     //   while (current) {
-//     //     console.log(current.value);
-//     //     current = current.next;
-//     //   }
+//     while (current) {
+//       console.log(current.value);
+//       current = current.next;
+//     }
 //   }
 // }
 
@@ -59,13 +70,13 @@
 
 // console.log(theStack);
 
-// console.log('--- NOW PUSH 1 ---');
-// theStack.push(1);
-// theStack.push(2);
+// console.log('--- NOW PUSH ---');
+// theStack.push(5);
 // theStack.push(3);
+// theStack.push(7);
+// theStack.push(2);
+// theStack.push(6);
 // console.log('Length: ' + theStack.getNumberOfElements());
 // theStack.print();
 
-// console.log('--- NOW POP 2 ---');
-// console.log(theStack.pop());
-// console.log('Length: ' + theStack.getNumberOfElements());
+// console.log('Min: ' + theStack.getMin());
