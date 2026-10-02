@@ -16,3 +16,8 @@
 //   : T | never;
 
 // type AddFnReturnTypeValue = ReturnValueType1<AddFn1>;
+// type AddFnReturnTypeValue = ReturnValueType1<AddFn1>;
+
+// OR use built-in utility ReturnType
+
+// type AddFnReturnTypeValue = ReturnType<AddFn1>;
