@@ -1,9 +1,3 @@
-// const mainUserName = 'Max';
-
-// // const greeting = 'Hi there, ' + mainUserName;
-
-// const greeting = `Hi there ${mainUserName}`;
-
 // type ReadPermissions = 'no-read' | 'read';
 // type WritePermissions = 'no-write' | 'write';
 
