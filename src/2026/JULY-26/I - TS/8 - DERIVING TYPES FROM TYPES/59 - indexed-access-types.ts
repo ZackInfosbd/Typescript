@@ -1,31 +1,31 @@
-// const appUser = {
-//   name: 'zack',
-//   age: 35,
-//   permissions: [{ id: 'i1', title: 'admin', description: 'Admin access' }],
+// // const appUser = {
+// //   name: 'zack',
+// //   age: 35,
+// //   permissions: [{ id: 'i1', title: 'admin', description: 'Admin access' }],
+// // };
+
+// // type AppUser = typeof appUser
+
+// type AppUser = {
+//   name: string;
+//   age: number;
+//   permissions: {
+//     id: string;
+//     title: string;
+//     description: string;
+//   }[];
 // };
 
-// type AppUser = typeof appUser
+// // type Perms = {
+// //   id: string;
+// //   title: string;
+// //   description: string;
+// // }[];
 
-type AppUser = {
-  name: string;
-  age: number;
-  permissions: {
-    id: string;
-    title: string;
-    description: string;
-  }[];
-};
+// type Perms = AppUser['permissions'];
 
-// type Perms = {
-//   id: string;
-//   title: string;
-//   description: string;
-// }[];
+// // Accessing Array Elements With Indexed Access Types
+// type Perm = Perms[number];
 
-type Perms = AppUser['permissions'];
-
-// Accessing Array Elements With Indexed Access Types
-type Perm = Perms[number];
-
-type Names = string[];
-type Name = Names[number];
+// type Names = string[];
+// type Name = Names[number];
