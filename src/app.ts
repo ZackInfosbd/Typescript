@@ -21,14 +21,42 @@ function logger<T extends new (...args: any[]) => any>(
   };
 }
 
+function autobind(
+  target: (...args: any[]) => any,
+  ctx: ClassMethodDecoratorContext,
+) {
+  ctx.addInitializer(function (this: any) {
+    this[ctx.name] = this[ctx.name].bind(this);
+  });
+
+  return function (this: any) {
+    console.log("Executing original function");
+    target.apply(this);
+  };
+}
+
+function fieldDecorator(target: undefined, ctx: ClassFieldDecoratorContext) {
+  console.log("Field decorator");
+  console.log(target);
+  console.log(ctx);
+
+  return (initialValue: any) => {
+    console.log(initialValue);
+    return "";
+  };
+}
+
 @logger
 class Person {
+  @fieldDecorator
   name = "Max";
 
+  @autobind
   greet() {
     console.log("Hi, I am " + this.name);
   }
 }
 
-const max = new Person();
-const julie = new Person();
+const zack = new Person();
+const greet = zack.greet;
+greet();
