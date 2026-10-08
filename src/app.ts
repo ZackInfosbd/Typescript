@@ -1,67 +1,16 @@
-/**
- * What & Why.
- * Creating Class, Method & Property Decorators.
- * Decorator Factories.
- * Official Decorators vs Experimental Decorators.
- */
-
-function logger<T extends new (...args: any[]) => any>(
-  target: T,
-  ctx: ClassDecoratorContext,
-) {
-  console.log("logger decorator");
-  console.log(target);
-  console.log(ctx);
-
-  return class extends target {
-    constructor(...args: any[]) {
-      super(...args);
-      console.log("Class decorator");
-    }
-  };
+function Logger(constructor: Function) {
+  console.log("Logging...");
+  console.log(constructor);
 }
 
-function autobind(
-  target: (...args: any[]) => any,
-  ctx: ClassMethodDecoratorContext,
-) {
-  ctx.addInitializer(function (this: any) {
-    this[ctx.name] = this[ctx.name].bind(this);
-  });
-
-  return function (this: any) {
-    console.log("Executing original function");
-    target.apply(this);
-  };
-}
-
-function replacer<T>(initValue: T) {
-  return function replacerDecorator(
-    target: undefined,
-    ctx: ClassFieldDecoratorContext,
-  ) {
-    console.log("Field decorator");
-    console.log(target);
-    console.log(ctx);
-
-    return (initialValue: any) => {
-      console.log(initialValue);
-      return initValue;
-    };
-  };
-}
-
-@logger
+@Logger
 class Person {
-  @replacer("")
-  name = "Max";
+  name = "zack";
 
-  @autobind
-  greet() {
-    console.log("Hi, I am " + this.name);
+  constructor() {
+    console.log("Creating person object...");
   }
 }
 
-const zack = new Person();
-const greet = zack.greet;
-greet();
+// const pers = new Person();
+// console.log(pers);
