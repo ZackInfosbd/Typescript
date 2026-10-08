@@ -1,0 +1,21 @@
+/**
+ * What & Why.
+ * Creating Class, Method & Property Decorators.
+ * Decorator Factories.
+ * Official Decorators vs Experimental Decorators.
+ */
+
+function logger(target: any, ctx: ClassDecoratorContext) {
+  console.log("logger decorator");
+  console.log(target);
+  console.log(ctx);
+}
+
+@logger
+class Person {
+  public name: string = "Max";
+
+  greet() {
+    console.log("Hi, I am " + this.name);
+  }
+}
