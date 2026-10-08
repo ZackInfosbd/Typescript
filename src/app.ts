@@ -52,6 +52,8 @@ function Log2(target: any, name: string, descriptor: PropertyDescriptor) {
   console.log("Accessor Target", target);
   console.log("Accessor Name", name);
   console.log("Accessor Descriptor", descriptor);
+
+  return;
 }
 
 function Log3(
@@ -105,3 +107,33 @@ const product1 = new Product("Book", 19);
 console.log(product1.price);
 product1.price = 10;
 console.log(product1.price);
+
+function AutoBind(_: any, _2: string | Symbol, descriptor: PropertyDescriptor) {
+  const originalMethod = descriptor.value;
+  const adjDescriptor: PropertyDescriptor = {
+    configurable: true,
+    enumerable: false,
+    get() {
+      const boundFn = originalMethod.bind(this);
+      return boundFn;
+    },
+  };
+  return adjDescriptor;
+}
+
+class Printer {
+  message = "This works!";
+
+  @AutoBind
+  showMessage() {
+    console.log(this.message);
+  }
+}
+
+const p = new Printer();
+
+const button = document.querySelector("button")!;
+// button.addEventListener("click", p.showMessage); // this does not work
+// button.addEventListener("click", p.showMessage.bind(p));
+
+button.addEventListener("click", p.showMessage);
