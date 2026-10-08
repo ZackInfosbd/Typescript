@@ -9,14 +9,20 @@ const registeredValidators: ValidatorConfig = {};
 function Required(target: any, propName: string) {
   registeredValidators[target.constructor.name] = {
     ...registeredValidators[target.constructor.name],
-    [propName]: ["required"],
+    [propName]: [
+      ...(registeredValidators[target.constructor.name]?.[propName] ?? []),
+      "required",
+    ],
   };
 }
 
-function PostiveNumber(target: any, propName: string) {
+function PositiveNumber(target: any, propName: string) {
   registeredValidators[target.constructor.name] = {
     ...registeredValidators[target.constructor.name],
-    [propName]: ["positive"],
+    [propName]: [
+      ...(registeredValidators[target.constructor.name]?.[propName] ?? []),
+      "positive",
+    ],
   };
 }
 
@@ -49,7 +55,7 @@ class Course {
   @Required
   title: string;
 
-  @PostiveNumber
+  @PositiveNumber
   private _price: number;
 
   constructor(title: string, price: number) {
