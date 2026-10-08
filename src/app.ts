@@ -35,20 +35,25 @@ function autobind(
   };
 }
 
-function fieldDecorator(target: undefined, ctx: ClassFieldDecoratorContext) {
-  console.log("Field decorator");
-  console.log(target);
-  console.log(ctx);
+function replacer<T>(initValue: T) {
+  return function replacerDecorator(
+    target: undefined,
+    ctx: ClassFieldDecoratorContext,
+  ) {
+    console.log("Field decorator");
+    console.log(target);
+    console.log(ctx);
 
-  return (initialValue: any) => {
-    console.log(initialValue);
-    return "";
+    return (initialValue: any) => {
+      console.log(initialValue);
+      return initValue;
+    };
   };
 }
 
 @logger
 class Person {
-  @fieldDecorator
+  @replacer("")
   name = "Max";
 
   @autobind
