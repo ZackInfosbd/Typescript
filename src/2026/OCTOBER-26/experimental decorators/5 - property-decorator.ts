@@ -30,8 +30,3 @@
 //     return this._price * (1 + tax);
 //   }
 // }
-
-// const product1 = new Product("Book", 19);
-// console.log(product1.price);
-// product1.price = 10;
-// console.log(product1.price);
